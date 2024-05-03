@@ -24,34 +24,62 @@
     <div class="text-center mb-5">
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
-    <!-- Todo: Create a modal with a form to add tasks -->
+
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModalLabel">Create New Task</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="taskForm">
+              <div class="mb-3">
+                <label for="taskTitle" class="form-label">Title:</label>
+                <input type="text" class="form-control" id="taskTitle" required autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="taskDueDate" class="form-label">Due Date:</label>
+                <input class="form-control" id="taskDueDate" required autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="taskDescription" class="form-label">Description:</label>
+                <textarea class="form-control" id="taskDescription" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Create Task</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
-          <div class="card-header bg-white">
+          <div class="card-header">
             <h2 class="card-title mb-1">To Do</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="todo-cards"></div>
+          <div class="card-body">
+            <div id="to-do-cards"></div>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-4 d-flex">
         <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
-          <div class="card-header bg-white">
+          <div class="card-header">
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
-          <div class="card-body bg-light">
+          <div class="card-body">
             <div id="in-progress-cards"></div>
           </div>
         </div>
         </div>
         <div class="col-12 col-lg-4 d-flex">
           <div id="done" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
+            <div class="card-header">
               <h2 class="card-title mb-1">Done</h2>
             </div>
-            <div class="card-body bg-light">
+            <div class="card-body ">
               <div id="done-cards"></div>
           </div>
           </div>
@@ -69,5 +97,7 @@
 
   <script src="./assets/js/script.js"></script>
 </body>
-
+<footer>
+  <div> <a href="https://github.com/Wanipopota" alt="github">Made by Wanipopota</a> </div>
+</footer>
 </html>

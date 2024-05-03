@@ -1,16 +1,105 @@
+header {
+  background-color: #84c1ff;
+  font-weight: bold;
+  
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  background-color: #badef2;
 }
 
 .swim-lanes {
   min-height: 60vh;
 }
 
-.task-card {
-  margin: 0 auto;
+.col-12 > div {
+  border-style: solid !important;
+  border-color: #000000 !important;
+  border-width: 3px;
 }
 
-.task-card:hover {
+.card-header{
+  background-color: #c6fcc6;
+  
+  
+  
+}
+
+.card-body {
+  background-color: #e7f8f1;
+  
+}
+
+#taskTitle {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+#taskDueDate{
+  font-size: 18px;
+  font-weight: bold;
+}
+.taskCard:hover {
   cursor: grab;
 }
+
+.taskCard {
+  margin: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 15px ;
+  max-width: 100%;
+  padding: 5%
+  
+}
+
+.cardDeleteButton {
+  display: flex;
+  background-color: white;
+}
+
+.cardDeleteButton:hover {
+  background-color: #ffcfcf;
+}
+
+.past-due {
+  background-color: #e34040;
+  
+}
+.past-due:hover{
+  background-color: #fa5858;
+}
+.due-soon {
+  background-color: #faeb40;
+}
+.due-soon:hover{
+  background-color: #faf087;
+}
+.due-later {
+  background-color: #5ad85a;
+}
+.due-later:hover{
+  background-color: #71ec71;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #84c1ff;
+  padding: 3px;
+  padding: 11px;
+  text-align: center;
+  margin-top: auto;
+}
+
+#todo-cards,
+#in-progress-cards,
+#done-cards {
+  min-height: 90%;
+  min-width: 90%;
+}
+
+
